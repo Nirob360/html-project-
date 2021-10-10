@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffeff0;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.container .group-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 10px;
+  border-radius: 15px;
+  height: 96vh;
+}
+
+.container .group-container .group-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.container .group-container .tab-container .tab-btn {
+  border-bottom: 2px solid #c5c5c5;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.container .group-container .tab-container .tab-btn button {
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  background: none;
+  color: #626262;
+  padding-bottom: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .group-container .tab-container .tab-btn button:hover {
+  color: #c96674;
+}
+
+.container .group-container .tab-container .tab-btn span {
+  display: inline-block;
+  width: 2px;
+  height: 18px;
+  background-color: #626262;
+  margin: 0px 7px 0px 7px;
+}
+
+.container .group-container .tab-container .tab-form .tab-form-title {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.container .group-container .tab-container .tab-form form input[type="text"] {
+  background-color: #ececec;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  width: 280px;
+  padding: 14px;
+  font-size: 20px;
+}
+
+.container .group-container .tab-container .tab-form form input[type="text"]:focus {
+  outline: none;
+}
+
+.container .group-container .tab-container .tab-form form .group-facility {
+  margin-top: 18px;
+}
+
+.container .group-container .tab-container .tab-form form .group-facility p {
+  font-size: 25px;
+}
+
+.container .group-container .tab-container .tab-form form .group-facility label {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  color: #626262;
+}
+
+.container .group-container .tab-container .tab-form form .group-facility label input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: solid 1px red;
+  margin-right: 14px;
+  border-radius: 3px;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container .group-container .tab-container .tab-form form .group-facility label input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: green;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.container .group-container .tab-container .tab-form form .group-facility label input[type="checkbox"]:checked {
+  border-color: green;
+}
+
+.container .group-container .tab-container .tab-form form .group-facility label input[type="checkbox"]:checked::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container .group-container .tab-container .tab-form .create-tab-btn button {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e22426;
+  border: none;
+  padding: 12px;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .group-container .tab-container .tab-form .create-tab-btn button:hover {
+  background-color: #ff0509;
+}
+/*# sourceMappingURL=style.css.map */

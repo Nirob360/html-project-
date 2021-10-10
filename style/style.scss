@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 239, 240);
+}
+.container {
+  width: 95%;
+  margin: auto;
+  .group-container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 15px;
+    height: 96vh;
+    .group-title {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .tab-container {
+      .tab-btn {
+        border-bottom: 2px solid #c5c5c5;
+        display: inline-block;
+        margin-bottom: 30px;
+        button {
+          border: none;
+          cursor: pointer;
+          font-size: 22px;
+          background: none;
+
+          color: #626262;
+          padding-bottom: 10px;
+          transition: 0.3s;
+          &:hover {
+            color: #c96674;
+          }
+        }
+        span {
+          display: inline-block;
+          width: 2px;
+          height: 18px;
+          background-color: #626262;
+          margin: 0px 7px 0px 7px;
+        }
+      }
+      .tab-form {
+        .tab-form-title {
+          font-size: 30px;
+          margin-bottom: 16px;
+        }
+        form {
+          input[type="text"] {
+            background-color: #ececec;
+            padding: 6px;
+            border: none;
+            border-radius: 5px;
+            width: 280px;
+            padding: 14px;
+            font-size: 20px;
+            &:focus {
+              outline: none;
+            }
+          }
+          .group-facility {
+            margin-top: 18px;
+            p {
+              font-size: 25px;
+            }
+            label {
+              display: block;
+              font-size: 20px;
+              margin: 10px 0px 10px 0px;
+              display: flex;
+              cursor: pointer;
+              color: #626262;
+              input[type="checkbox"] {
+                appearance: none;
+                width: 18px;
+                height: 18px;
+                background-color: #ffffff;
+                border: solid 1px red;
+                margin-right: 14px;
+                border-radius: 3px;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &::after {
+                  font-family: "Font Awesome 5 Free";
+                  content: "\f00c";
+                  font-weight: 900;
+                  color: green;
+                  transition: 0.4s;
+                  transform: scale(0);
+                }
+                &:checked {
+                  border-color: green;
+                }
+                &:checked::after {
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+        }
+        .create-tab-btn {
+          button {
+            // width: 150px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #e22426;
+            border: none;
+            padding: 12px;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+              background-color: #ff0509;
+            }
+          }
+        }
+      }
+    }
+  }
+}
