@@ -12,6 +12,8 @@ body {
 .container {
   width: 95%;
   margin: auto;
+  -webkit-box-shadow: -1px 2px 33px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 33px -5px rgba(0, 0, 0, 0.75);
 }
 
 .container .group-container {
@@ -38,14 +40,32 @@ body {
   cursor: pointer;
   font-size: 22px;
   background: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #626262;
   padding-bottom: 10px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .container .group-container .tab-container .tab-btn button:hover {
-  color: #c96674;
+  color: red;
+}
+
+.container .group-container .tab-container .tab-btn button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  opacity: 0;
+  margin-top: 36px;
+  height: 2px;
+  background-color: red;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.container .group-container .tab-container .tab-btn .active::before {
+  opacity: 1;
 }
 
 .container .group-container .tab-container .tab-btn span {
@@ -59,6 +79,26 @@ body {
 .container .group-container .tab-container .tab-form .tab-form-title {
   font-size: 30px;
   margin-bottom: 16px;
+}
+
+.container .group-container .tab-container .tab-form .content {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1;
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.container .group-container .tab-container .tab-form .content.active {
+  opacity: 1;
+  z-index: 50;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .container .group-container .tab-container .tab-form form input[type="text"] {
@@ -137,7 +177,7 @@ body {
           transform: scale(1);
 }
 
-.container .group-container .tab-container .tab-form .create-tab-btn button {
+.container .group-container .tab-container .tab-form .create-tab-btn {
   font-size: 18px;
   font-weight: bold;
   background-color: #e22426;
@@ -150,7 +190,7 @@ body {
   transition: 0.3s;
 }
 
-.container .group-container .tab-container .tab-form .create-tab-btn button:hover {
+.container .group-container .tab-container .tab-form .create-tab-btn:hover {
   background-color: #ff0509;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,13 +14,15 @@
         <h2 class="group-title">Group For</h2>
         <div class="tab-container">
           <div class="tab-btn">
-            <button class="btn-1" type="button">Dutypedia User</button>
+            <button class="tab-button active btn-1" type="button">
+              Dutypedia User
+            </button>
             <span></span>
-            <button class="btn-2" type="button">Ofline User</button>
+            <button class="tab-button btn-2" type="button">Ofline User</button>
           </div>
           <div class="tab-form">
             <h2 class="tab-form-title">Enter A Group Name</h2>
-            <div class="tab-one">
+            <div class="content active tab-one">
               <form action="#">
                 <input
                   id="type_name"
@@ -69,10 +71,60 @@
                   >
                 </div>
                  
+                <button class="create-tab-btn" type="submit">Create Now</button>
               </form>
             </div>
-            <div class="create-tab-btn">
-              <button type="button">Create Now</button>
+            <div class="content tab-tow">
+              <form action="#">
+                <input
+                  id="type_name"
+                  type="text"
+                  placeholder="Enter your Name"
+                  value="Ofline User"
+                />
+                <div class="group-facility">
+                  <p>ofline usre</p>
+                   
+
+                  <label for="online-markating">
+                    <input
+                      type="checkbox"
+                      name="online-markating"
+                      id="online-markating"
+                    />Online Metting or class</label
+                  >
+                  <label for="attendence">
+                    <input
+                      type="checkbox"
+                      name="attendence"
+                      id="attendence"
+                    />Attendence</label
+                  >
+                  <label for="book-list">
+                    <input
+                      type="checkbox"
+                      name="book-list"
+                      id="book-list"
+                    />Book List</label
+                  >
+                  <label for="routine">
+                    <input
+                      type="checkbox"
+                      name="routine"
+                      id="routine"
+                    />Routine</label
+                  >
+                  <label for="class-test">
+                    <input
+                      type="checkbox"
+                      name="class-test"
+                      id="class-test"
+                    />Class Test</label
+                  >
+                </div>
+                 
+                <button class="create-tab-btn" type="submit">Create Now</button>
+              </form>
             </div>
           </div>
         </div>
