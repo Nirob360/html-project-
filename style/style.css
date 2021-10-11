@@ -182,15 +182,16 @@ body {
   font-weight: bold;
   background-color: #e22426;
   border: none;
+  margin-left: -10px;
   padding: 12px;
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  
 }
 
 .container .group-container .tab-container .tab-form .create-tab-btn:hover {
   background-color: #ff0509;
 }
-/*# sourceMappingURL=style.css.map */
